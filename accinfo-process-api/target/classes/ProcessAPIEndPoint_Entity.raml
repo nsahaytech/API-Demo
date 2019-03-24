@@ -1,0 +1,70 @@
+#%RAML 1.0 Library
+title: ProcessAPI_Entity
+types:
+ 
+ # Account entity with necessary fields
+ account:
+  description: account description
+  type: object
+  properties:
+    SchemeName:
+     required: true
+     type: string
+    Identification:
+     required: true
+     type: string
+    Name:
+     required: true
+     type: string
+    SecondaryIdentification:
+     required: true
+     type: string
+
+ # Consents entity with necessary fields
+ consents:
+  description: consecnt description
+  type: account
+  properties:
+    consent_id:
+     required: true
+     type: string        
+    status:
+     required: true    
+     type: string    
+    creation_date: 
+     required: true
+     type: date-only    
+    status_update_date:
+     required: true
+     type: date-only
+    instruction_identification:
+     required: true
+     type: string
+    end_to_end_identification:
+     required: true
+     type: string
+    payment_amount:
+     required: true
+     type: string
+    payment_currency:
+     required: true
+     type: string
+    remittence_reference:
+     required: false
+     type: string
+    remittence_unstructured:
+     required: false
+     type: string
+    payment_context:
+     required: true
+     type: string 
+ 
+ 
+    
+     
+
+    
+    
+
+   
+  
